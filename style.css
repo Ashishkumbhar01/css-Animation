@@ -1,65 +1,44 @@
-*{margin:0;padding:0;box-sizing:border-box;}
-.mainDiv {
-background-color:#111;
+*{
+padding:0;
+margin:0;
+background-color:rgb(5,10,20);
+box-sizing:border-box;
 }
 
-.balls  {
+h2 {
+text-decoration:underline;
+font-variant:small-caps;
+font-style:oblique;
+text-shadow:3px 1px 0px yellow;
+text-align:center;
+color:fuchsia;
+font-weight:999;
+font-family:fantasy;
+}
+
+.body {
 width:100vw;
 height:100vh;
 display:flex;
-justify-content:center;
 align-items:center;
-}
-
-.balls .lines{
-display:flex;
-border-bottom: 5px solid white;
-}
-
-.balls .lines .ball{
-width:50px;
-height:50px;
-background-color:black;
-list-style:none;
-margin:0 10px;
-border-radius:50%;
-animation:banucy 1s linear infinite;
-}
-
-@keyframes banucy{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-150px);}
-100%{transform:translateY(0);}
-}
-
-.lines .ball:nth-child(1) {
-animation-delay:0.4s;
-background-color:lime;
-}
-
-.lines .ball:nth-child(2) {
-animation-delay:0.7s;
-background-color:yellow;
-}
-
-.lines .ball:nth-child(3) {
-animation-delay:0.5s;
-background-color:aqua;
-}
-
-.lines .ball:nth-child(4) {
-animation-delay:0.3s;
-background-color:red;
-}
-
-.lines .ball:nth-child(5) {
-animation-delay:0.8s;
-background-color:fuchsia;
-}
-
-h2{
-text-align:center;
-color:white;
+justify-content:center;
 margin:auto;
-bottom:50%;
 }
+
+.animes {
+width:100px;
+height:100px;
+background:black;
+border-radius:50%;
+border:solid 1px white;
+animation:ex 300ms linear infinite;
+}
+
+@keyframes ex{
+0%{box-shadow:blue 4px 4px 0px; transform:rotate(0deg);}
+25%{box-shadow:aqua 4px 4px 0px;}
+50%{box-shadow:lime 4px 4px 0px;}
+75%{box-shadow:yellow 4px 4px 0px;}
+100%{box-shadow:fuchsia 4px 4px 0px;transform:rotate(360deg);}
+}
+
